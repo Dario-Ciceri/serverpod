@@ -68,6 +68,7 @@ class FileUploader {
         var result = await request.send();
         // var body = await _readBody(result.stream);
         // print('body: $body');
+        print(result.reasonPhrase);
         return result.statusCode == 204;
       } catch (e) {
         return false;
